@@ -3,6 +3,10 @@
 We propose an enhanced YOLOv5 model specifically tailored for micro-defect detection on KDP crystals.
 # **Experimental** **setup**
 This study's experimental configuration was established on a system operating under Windows 10, outfitted with an i7-8750H CPU and an NVIDIA GeForce RTX 1060 GPU. Experiments were accelerated using CUDA 11.8, based on PyTorch 2.1.0, with identical hyper-parameters for  training and validation. 
+# Download
+The dataset and models have been released. [Data&Model]( https://pan.baidu.com/s/1CNXxqazJ0FbLtPdP2yIL0A?pwd=s78b )
+- The link includes our own KDP micro-defect dataset.
+- This model includes the redesigned Backbone layer of the YOLOv5s model, the introduction of the XIoU loss function, and the construction of a novel combination of XIoU and NWD loss functions.
 ### Dataset Directory Structure
 ~~~
 VOCdevkit/
