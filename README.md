@@ -7,6 +7,8 @@ This study's experimental configuration was established on a system operating un
 The dataset and models have been released. [Data&Model]( https://pan.baidu.com/s/1CNXxqazJ0FbLtPdP2yIL0A?pwd=s78b )
 - The link includes our own KDP micro-defect dataset.
 - This model includes the redesigned Backbone layer of the YOLOv5s model, the introduction of the XIoU loss function, and the construction of a novel combination of XIoU and NWD loss functions.
+# Usage Instructions
+Please visit the https://github.com/ultralytics/yolov5/tree/v6.1 website to download the YOLOv5 v6.1. After downloading YOLOv5 v6.1, replace the existing yolov5s.yaml file with the EXN-yolo.yaml file from the Data&Model folder. Next, navigate to the yolov5-6.1/yolov5-6.1/models/ directory and place the efficientv2.py file under the models subdirectory. These two steps successfully integrate the efficientnetv2 as the backbone structure. Finally, open the yolov5-6.1/yolov5-6.1/utils/loss.py file and add the content from the XIoU+NWD.py file located in the Data&Model folder to the loss.py file, thus successfully incorporating the new loss function XIoU+NWD.
 ### Dataset Directory Structure
 ~~~
 VOCdevkit/
